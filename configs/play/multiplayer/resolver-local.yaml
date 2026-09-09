@@ -1,0 +1,28 @@
+# Laptop-safe runtime search profile for multiplayer matches.
+game:
+  players: 3
+  hand_size: 2
+  starting_player: 0
+  payoff: error_margin
+
+# Laptop-safe default. The CLI substitutes the selected player count, round
+# and worker count. Search sees only the acting player's information state.
+search:
+  seed: 20260905
+  mode: ismcts
+  workers: 4
+  tablebase_tricks: 0
+  belief:
+    particles: 96
+    history_temperature: 1.0
+    resample_ess_ratio: 0.5
+    mcmc_steps: 2
+    mcmc_burn_in: 8
+    history_model: heuristic
+  ismcts:
+    simulations: 1200
+    exploration: 1.2
+    rollout_depth: 64
+    max_tree_nodes: 100000
+    temperature: 0.20
+    rollout_policy: heuristic

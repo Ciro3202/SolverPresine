@@ -1,0 +1,25 @@
+# Runtime search profile for the heads-up R3 resolver.
+game:
+  players: 2
+  hand_size: 3
+  starting_player: 0
+  payoff: error_margin
+
+# Table-free IS-MCTS profile. The launcher sets blueprint_weight=0 by default,
+# so online decisions use pure search; the bundled blueprint can be enabled as
+# a prior from the CLI.
+search:
+  seed: 20260826
+  mode: ismcts
+  workers: 1
+  tablebase_tricks: 0
+  belief:
+    particles: 64
+    history_model: uniform
+  ismcts:
+    simulations: 2000
+    exploration: 1.2
+    rollout_depth: 64
+    max_tree_nodes: 200000
+    temperature: 0.30
+    rollout_policy: heuristic

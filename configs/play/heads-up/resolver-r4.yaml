@@ -1,0 +1,22 @@
+# Runtime search profile for the heads-up R4 resolver.
+game:
+  players: 2
+  hand_size: 4
+  starting_player: 0
+  payoff: error_margin
+
+search:
+  seed: 20260825
+  mode: ismcts
+  workers: 1
+  tablebase_tricks: 2
+  belief:
+    particles: 64
+    history_model: uniform
+  ismcts:
+    simulations: 400
+    exploration: 1.2
+    rollout_depth: 64
+    max_tree_nodes: 50000
+    temperature: 0.35
+    rollout_policy: uniform

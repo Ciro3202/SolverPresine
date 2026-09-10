@@ -31,8 +31,12 @@ For the 3-PLAYERS game:
 
 ## Game Rules
 Presine is a card game for 2–8 players (here playable only in 2-3 players), played with a 40-card Italian deck (Ace, 2–7, Jack, Knight e King with 4 suits). A match has five rounds: R5, R4, R3, R2 and R1, with each player receiving 5, 4, 3, 2 and finally 1 card.  
+
 At the beginning of each round, every player predicts how many tricks they will win. The last player cannot make a prediction that would bring the total exactly to the number of tricks available, except in R1.  
+
 Players may play any card: there are no suits to follow. The highest card wins the trick, and the winner leads the next one. The strength of the cards are determined by the suits (Clubs is the weakest, then Swords, Cups and Coins which are the strongest) and within the same suit by the value of the card itself (ace is the lowest, king is the highest).   
+
 The Ace of Coins is special: when it is played, its owner chooses whether it is the highest or lowest card in the game.  
 At the end of the round, your errors are the absolute difference between the number of tricks you predicted and the number you actually won. After all five rounds, the player with the fewest total errors wins.  
+
 R1 is played blind: you can see everyone else’s card, but not your own. After all predictions have been made, the cards are revealed and the trick is resolved.

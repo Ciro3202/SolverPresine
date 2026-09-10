@@ -14,12 +14,14 @@ difficult.
 
 ## Exploitability
 These measures are a result of hours of HPC evaluations on single rounds, but they might simply be lower bounds of exploitability (expressed in errors per rounds)
+
 For the HEADS-UP game:
 - R1: exact exploitability 0.003525641 errors per round
 - R2: exact exploitability 0.020075490 (15,057,744 information states evaluated)
 - R3: lower bound exploitability 0.0323 with no resolver
 - R4: lower bound exploitability 0.0691 with no resolver 
 - R5: lower bound exploitability 0.0504 with no resolver  
+
 For the 3-PLAYERS game:
 - R1: deterministic strategy
 - R2: lower bound exploitability 0.017383

@@ -387,8 +387,7 @@ class HumanMatch:
             hand_shown = False
             while not state.is_terminal:
                 if (
-                    self.options.players > 2
-                    and state.current_player == self.options.human_seat
+                    state.current_player == self.options.human_seat
                     and Phase(state.phase) == Phase.BID
                     and round_size == 1
                 ):
